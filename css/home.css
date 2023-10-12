@@ -8,13 +8,22 @@
 }
 /*background da página*/
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: url('./background.jpg') no-repeat;
+  width: 100%;
+  height: 100vh;
+  background: url('./imagens/background.jpg') no-repeat;
   background-position: center;
   background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+ 
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;*/
+  
 }
 
 /*posição dos elementos na navbar*/
@@ -82,17 +91,16 @@ header{
   background: #4287f5;
   color: white;
 }
-/*posiçãp do texto principal*/
+/*posiçãp dos elementos na página*/
 .row{
   display: flex;
-  height: 80%;
+  height: 88%;
   align-items: center;
 }
-/*posiçãp do texto principal*/
-.col{
-  flex-basis: 50%;
-  padding: 20px 100px;
-}
+/*posiçãp do texto de apresentação*/
+/*.col{
+  flex-basis: 50%; 
+}*/
 h1, h2{
   color: #4287f5;
   font-size: 30px;
@@ -114,60 +122,21 @@ button{
   outline: none;
   margin-top: 30px;
 }
-/*.card{
+/*formato e posição dos cartões*/
+.card{
   width: 200px;
   height: 230px;
   display: inline-block;
   border-radius: 10px;
-  padding: 15ps 25px;
+  padding: 15px 25px;
   box-sizing: border-box;
   cursor: pointer;
-  margin: 10px 15px;
-  background-image: url(./lisboa.jpg);
+  margin: 10px 2px ;
   background-position: center;
-  background-size: cover;
-}*/
+  background-size: cover;  
+}
+.card1{background-image: url(./imagens/lisboa.jpg);}
+.card2{background-image: url(./imagens/novaYork.jpg);}
+.card3{background-image: url(./imagens/japao.jpg);}
+.card4{background-image: url(./imagens/chile.jpg);}
 
-.col2{
-  display: flex;
-  
-}
-.coluna1{
-  flex-direction: column;
-  width: 300px;
-  height: 330px;
-  border-radius: 10px;
-  padding: 15ps 25px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-  justify-content: space-between;
-
-}
-.coluna2{
-  flex-direction: column;
-  width: 200px;
-  height: 230px;
-  border-radius: 10px;
-  padding: 15ps 25px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-position: center;
-  background-size: cover;
-
-}
-.card1{
-  background-image: url(./lisboa.jpg);
-}
-.card2{
-  background-image: url(./novaYork.jpg);
-}
-.card3{
-  background-image: url(./jpao.jpg);
-}
-.card4{
-  background-image: url(./chile.jpg);
-}
