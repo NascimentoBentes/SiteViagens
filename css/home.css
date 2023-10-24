@@ -121,8 +121,6 @@ p{
   border-radius: 20px;
   outline: none;
   margin-top: 30px;
-  border-color: #000;
-  border-width: 5px;
   transition: all .2s ease-in-out; 
 }
 .btnExplorar:hover{
@@ -135,7 +133,7 @@ p{
 
 /*formato e posição dos cartões*/
 .card{
-  width: 200px;
+  width: 20px;
   height: 230px;
   display: inline-block;
   border-radius: 10px;
