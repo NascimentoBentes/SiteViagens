@@ -133,7 +133,7 @@ p{
 
 /*formato e posição dos cartões*/
 .card{
-  width: 20px;
+  width: 200px;
   height: 230px;
   display: inline-block;
   border-radius: 10px;
