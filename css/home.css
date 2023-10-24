@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 /*background da página*/
-body{
+body {
   width: 100%;
   height: 100vh;
   background: url('./imagens/background.jpg') no-repeat;
@@ -111,7 +111,7 @@ p{
   line-height: 15px;
 }
 /*visual do botão 'Explorar'*/
-button{
+.btnExplorar{
   width: 180px;
   color: #000;
   font-size: 12px;
@@ -121,7 +121,18 @@ button{
   border-radius: 20px;
   outline: none;
   margin-top: 30px;
+  border-color: #000;
+  border-width: 5px;
+  transition: all .2s ease-in-out; 
 }
+.btnExplorar:hover{
+  background: #4287f5;
+  color: white;
+  transform: scale(1.3);
+  transition: transform .5s;
+}
+
+
 /*formato e posição dos cartões*/
 .card{
   width: 200px;
