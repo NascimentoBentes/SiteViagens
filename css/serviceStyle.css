@@ -1,9 +1,11 @@
+/* Estilos para o corpo da página */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+/* Estilos para o corpo da página */
 body {
     min-height: 100vh;
     background: url(imagens/background.jpg) center / cover;
@@ -11,6 +13,7 @@ body {
     justify-content: center;
 }
 
+/* Estilos para a seção principal com classe 'table' */
 main.table {
     width: 70vw;
     height: 75vh;
@@ -21,7 +24,7 @@ main.table {
 
     overflow: hidden;
 }
-
+/* Estilos para o cabeçalho da tabela */
 .table_header {
     width: 100%;
     height: 10%;
@@ -32,7 +35,7 @@ main.table {
     align-items: center;
     
 }
-
+/* Estilos para o corpo da tabela */
 .table_body {
 
     width: 95%;
@@ -45,6 +48,7 @@ main.table {
     
 }
 
+/* Estilos para a barra de rolagem */
 .table_body::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
@@ -56,6 +60,7 @@ main.table {
     visibility: hidden;
 }
 
+/* Exibe o polegar da barra de rolagem quando o mouse está sobre o corpo da tabela */
 .table_body:hover::-webkit-scrollbar-thumb {
     visibility: visible;
 }
@@ -65,6 +70,7 @@ table {
 
 }
 
+/* Estilos para as células da tabela contendo imagens */
 td img {
     width: 36px;
     height: 36px;
@@ -73,12 +79,14 @@ td img {
     vertical-align: middle;
 }
 
+/* Estilos para a tabela e suas células */
 table, th, td {
     border-collapse: collapse;
     padding: 1rem;
     text-align: left;
 }
 
+/* Estilos para o cabeçalho da tabela fixo no topo durante a rolagem */
 thead th {
     position: sticky;
     top: 0;
@@ -86,35 +94,44 @@ thead th {
     background-color: #D5D1DEFE;
 }
 
+/* Estilos para linhas pares do corpo da tabela */
 tbody tr:nth-child(even) {
     background-color: #0000000b;
 }
 
+/* Estilos para linhas da tabela quando o mouse está sobre elas */
 tbody tr:hover {
     background-color: rgba(173, 247, 228, 0.4);
 }
 
+/* Estilos para as classes de status */
 .status {
     padding: .4rem 0;
     border-radius: 2rem;
     text-align: center;
 }
+
+/* Estilos específicos para a classe de status 'ativo' */
 .status.ativo {
     background-color: #86e49d;
     color: #006b21;
     
 }
 
+/* Estilos específicos para a classe de status 'inativo' */
 .status.inativo {
     background-color: #d893a3;
     color: #b30021;
 }
 
+/* Estilos para telas com largura máxima de 1000px */
 @media (max-width: 1000px) {
     td:not(:first-of-type) {
         min-width: 12.1rem;
     }
 }
+
+/* Estilos específicos para a classe 'Servicefromservice' */
 .Servicefromservice {
     color: rgb(63, 62, 62)
     
