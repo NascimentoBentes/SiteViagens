@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebSite de Viagens</title>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="./css/home.css">
-  <link rel="stylesheet" href="./css/login.css">
   <link rel="stylesheet" href="service.html">
   
 </head>
@@ -18,7 +18,7 @@
       <a href="#">Home</a>
       <a href="service.html">Serviços</a>
       <a href="#">Contato</a>
-      <button class="btnLogin-popup">Login</button>
+      <button class="btnLogin-popup" onclick="abrirLogin()">Login</button>
     </nav>
   </header>
 
@@ -63,18 +63,37 @@
       </div>
     </div>
   </div>
-  <!--
-  <div class="wrapper">
+  <!-- login(oculto) -->
+  <div class="wrapper" id="wrapper">
     <div class="form-box login">
-      <form action="#"></form>
-        <div class="input-box">
-          <span class="icon"></span>
+      <div class="top-login">
+        <h1>Log in</h1>
+        <button onclick="fecharLogin()">X</button>
+      </div>
+      <form>
+
+        <div class="email-block input-box">
+          <label>Endereço de email ou ID</label>
           <input type="email" required>
-          <label>Email</label>
+        </div>
+        
+        <div class="senha-block input-box">
+          <label>Senha</label>
+          <input type="password" required>            
+        </div>
+
+        <div class="lembrar-senha">
+          <label><input type="checkbox">Lembrar 
+            minha senha</label>
+        </div>
+
+        <div class="btn">
+          <button onclick="" type="submit" class="btn">Login
+          </button>
         </div>
       </form>
     </div>
-  </div>-->
+  </div>
 </body>
 
 </html>

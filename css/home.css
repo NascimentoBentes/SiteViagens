@@ -149,3 +149,95 @@ p{
 .card3{background-image: url(./imagens/japao.jpg);}
 .card4{background-image: url(./imagens/chile.jpg);}
 
+/* configuração do menu de login */
+.wrapper{
+  z-index: 999;
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 440px;
+  height: auto;
+  padding: 25px;
+  background-color: #fff;
+  border: .5px solid black;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  
+}
+
+.top-login{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.top-login h1{
+font-size: 38px;
+font-weight: 400;
+font-family: 'Verdana';
+margin-bottom: 30px
+}
+
+.top-login button{
+width: 20px;
+height: 20px;
+transform: translateX(10px) translateY(-10px);
+top: 0;
+right: 0;
+text-align: center;
+transition-duration: 200ms;
+background-color: blue;
+color: white;
+border: 1px solid black;
+border-radius: 4px;
+
+}
+
+.top-login button:hover{
+transition-duration: 200ms;
+background-color:white;
+color: blue;
+}
+
+form div{
+  margin-bottom: 18px;
+}
+
+.input-box label {
+  width: 100%;
+  font-size: 24px;
+  display: block;
+}
+.input-box input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: 2px solid lightgrey;
+  outline: none;
+
+}
+
+.input-box input:hover{
+  /* border: 2px solid lightgrey; */
+  border: 2px solid black;
+  transition: 0.4s;
+}
+
+.btn button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 0.5px;
+  border: 0px;
+  color: black;
+  background-color: lightblue;
+  outline: none;
+}
+.btn button:hover{
+  background-color: rgb(69, 168, 201);
+}
